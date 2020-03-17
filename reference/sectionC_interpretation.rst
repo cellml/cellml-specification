@@ -335,16 +335,22 @@ Component reference
 Variable reference
 ------------------
 
-#. When present in an information item which is a descendant of a
-   :code:`component` element, a variable reference SHALL be the name of a
-   variable, and SHALL refer to the :code:`variable` element in that
-   component with a :code:`name` attribute identical to the variable
-   reference.
+#. When present in a :code:`math` element a variable reference SHALL be the
+   name of a variable, and SHALL refer to the :code:`variable` element in the
+   parent :code:`component` with a :code:`name` attribute identical to the
+   variable reference.
 
-#. In all other cases, a variable reference SHALL consist of a component
-   reference and a variable name. In this case, the variable reference
-   SHALL be treated as if it was just the variable name present in the
-   :code:`component` element referenced by the component reference.
+#. When present in an :code:`initial_value` attribute of a :code:`variable`
+   element a variable reference SHALL be the name of a variable,
+   and SHALL refer to the :code:`variable` element in the same :code:`component`
+   with a :code:`name` attribute identical to the variable reference.
+
+#. When present in a :code:`map_variables` element a variable reference SHALL
+   be the name of a variable referenced by either the :code:`variable_1` or the
+   :code:`variable_2` attributes, and SHALL refer to the :code:`variable`
+   element in the :code:`component` named by the corresponding
+   :code:`component_1` or :code:`component_2` attribute of the parent
+   :code:`connection` element.
 
 .. marker_variable_reference_end
 .. marker_interpretation_of_initial_values_start
