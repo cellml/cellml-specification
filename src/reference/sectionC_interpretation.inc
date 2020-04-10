@@ -401,8 +401,8 @@ Interpretation of ``reset`` elements
 #. All :code:`reset` elements SHALL be considered sequentially for the connected variable set (see :ref:`Interpretation of map_variables<specC_interpretation_of_map_variables>`) to which the referenced variable belongs.
    The sequence SHALL be determined by the value of the reset element’s :code:`order` attribute, lowest (least positive / most negative) having priority.
 
-#. The condition under which a reset occurs SHALL be defined by the equality of the reset element’s :code:`test_variable` attribute and the evaluation of the MathML expression encoded in the :code:`test_value`.
+#. The condition under which a reset occurs SHALL be defined by the equality of value of the variable referenced by the reset element’s :code:`test_variable` attribute and the evaluation of the MathML expression encoded in the :code:`test_value`.
 
-#. When a reset occurs, the variable referenced by the reset element’s :code:`variable` attribute SHALL be set to the result of evaluating the MathML expression encoded in the :code:`reset_value`.
+#. When a reset occurs, the value of the variable referenced by the reset element’s :code:`variable` attribute SHALL be set to the result of evaluating the MathML expression encoded in the :code:`reset_value`.
 
 .. marker_interpretation_of_variable_resets_end
