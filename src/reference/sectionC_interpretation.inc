@@ -23,17 +23,20 @@ See :ref:`Units reference<specC_units_reference>` and :ref:`Component reference<
 References to ``units`` elements
 --------------------------------
 
-The term "units reference" refers to the value of a :code:`units_ref` attribute in :code:`import` items for :code:`units`, and the values of :code:`units` attributes used in :code:`unit` and :code:`variable` items.
+The term "units reference" refers to the value of a :code:`units` attribute used in :code:`unit` or :code:`variable` items, or to the value of a :code:`units_ref` attribute in an :code:`import units` element.
 
-#. A units reference SHALL be a CellML identifier and SHALL be interpreted dependent on the context of the :ref:`CellML model<specA_cellml_model>` in which it occurs, according to the units referencing rules defined later in this section.
+#. A units reference SHALL be a CellML identifier.
 
-#. The units referencing rules are:
+#. Where the units reference is equal to the value in the "Name" column of the :ref:`Built-in units table<table_built_in_units>`, the units reference SHALL be a reference to the built-in units corresponding to that row of the table.
 
-   #. Where, within the same infoset, a :code:`units` element has a :code:`name` attribute identical to the units reference, the units reference SHALL refer to that :code:`units` element.
+#. Where, within the same infoset, a :code:`units` element has a :code:`name` attribute identical to the units reference, the units reference SHALL refer to that :code:`units` element.
 
-   #. Where there is an :code:`import units` element in the :ref:`CellML infoset<specA_cellml_infoset>`, such that the :code:`import units` element has a :code:`name` attribute identical to the units reference, then the units reference SHALL be treated with respect to referencing rules as if the units reference appeared in the imported infoset, and referring to the :code:`name` specified in the :code:`units_ref` attribute of the :code:`import units` element.
+#. Where, within the same infoset, an :code:`import units` element has a :code:`name` attribute identical to the units reference, the units reference SHALL refer to an imported :code:`units` element, specified by the :code:`units_ref` attribute of the :code:`import units`.
 
-   #. Where the units reference is equal to the value in the "Name" column of the :ref:`Built-in units table<table_built_in_units>`, then the units reference SHALL be a reference to the built-in units corresponding to that row of the table.
+   #. The "imported infoset" shall be the infoset specified by the parent :code:`import` element of the :code:`import units` element.
+   #. Where there exists within the imported infoset a :code:`units` element with a :code:`name` attribute equal to the :code:`units_ref` attribute, the reference shall be to that element.
+   #. Where there exists within the imported infoset an :code:`import units` element with a :code:`name` attribute equal to the :code:`units_ref` attribute, this rule shall be applied recursively until a :code:`units` element is reached, and the reference shall be to that :code:`units` element.
+
 
 .. marker_units_reference1
 
