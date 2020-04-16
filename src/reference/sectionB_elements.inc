@@ -153,7 +153,7 @@ A :code:`units` element information item (referred to in this specification as a
 
 .. container:: issue-units-standard
 
-   2. The value of the :code:`name` attribute MUST NOT be identical to the name of any of the units listed in the :ref:`Built-in units table<table_built_in_units>` (see :numref:`%s. Units references<specC_units_reference>`).
+   2. The value of the :code:`name` attribute MUST NOT be identical to the name of any of the units listed in :ref:`Table 2.1: Built-in units<table_built_in_units>` (see :numref:`%s. Units references<specC_units_reference>`).
 
 .. container:: issue-units-child
 
@@ -360,7 +360,7 @@ A :code:`math` element information item (referred to in this specification as a 
 
 .. container:: issue-math-child
 
-   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in the :ref:`Supported MathML Elements table<table_supported_mathml_elements>`.
+   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :ref:`Table 2.1: Supported MathML elements<table_supported_mathml_elements>`.
 
 .. marker_math_2
 

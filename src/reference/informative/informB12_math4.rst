@@ -22,7 +22,7 @@
       <cn cellml:units="dimensionless">3.14159e+03</cn> <!-- Scientific or e-notation is permitted. -->
 
 
-    Please note that the units name specified must refer to a :code:`units` element that exists in the :code:`model` element, or be one from the :ref:`Built-in Units<table_built_in_units>` table.
+    Please note that the units name specified must refer to a :code:`units` element that exists in the :code:`model` element, or be one from :ref:`Table 2.1: Built-in units<table_built_in_units>`.
 
 
     .. code-block:: xml
