@@ -19,8 +19,9 @@ Hi this is :numref:`table_built_in_units`
 
 and this is :numref:`a table labelled<table_built_in_units>`
 
-and this is :numref:`a table with %s as a number<table_built_in_units>`
+and this is :numref:`a table with {number} as a number<table_built_in_units>`
 
+and this is :numref:`a table with {number} and a {title} <table_built_in_units>`
 
 .. container:: issue-model-name
 
