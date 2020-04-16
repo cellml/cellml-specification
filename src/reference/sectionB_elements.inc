@@ -12,17 +12,6 @@ The ``model`` element
    The top-level element information item in a :ref:`CellML infoset<specA_cellml_infoset>` MUST be an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`model`.
    In this specification, the top-level element is referred to as the :code:`model` element.
 
-
-TESTING *******
-
-Hi this is :numref:`table_built_in_units`
-
-and this is :numref:`a table labelled<table_built_in_units>`
-
-and this is :numref:`a table with {number} as a number<table_built_in_units>`
-
-and this is :numref:`a table with {number} and a {name} <table_built_in_units>`
-
 .. container:: issue-model-name
 
    1. Every :code:`model` element MUST contain a :code:`name` attribute.
@@ -163,7 +152,7 @@ A :code:`units` element information item (referred to in this specification as a
 
 .. container:: issue-units-standard
 
-   2. The value of the :code:`name` attribute MUST NOT be identical to the name of any of the units listed in :numref:`Table %s: Built-in units<table_built_in_units>` (see :numref:`%s. Units references<specC_units_reference>`).
+   2. The value of the :code:`name` attribute MUST NOT be identical to the name of any of the units listed in :numref:`table_built_in_units` (see :numref:`%s. Units references<specC_units_reference>`).
 
 .. container:: issue-units-child
 
@@ -370,7 +359,7 @@ A :code:`math` element information item (referred to in this specification as a 
 
 .. container:: issue-math-child
 
-   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :numref:`Table %s: Supported MathML elements<table_supported_mathml_elements>`.
+   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :numref:`table_supported_mathml_elements`.
 
 .. marker_math_2
 
