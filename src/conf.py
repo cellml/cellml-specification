@@ -80,7 +80,6 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.intersphinx',
-    'hoverxref.extension',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -236,11 +235,6 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'navigation_depth': 2,
 }
-
-# Automagically convert all :ref: blocks to show a tooltip using the hoverxref
-# extension.
-hoverxref_auto_ref = True
-hoverxref_roles = ['term', 'code']
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = ['@SPHINX_THEME_DIR@']

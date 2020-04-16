@@ -28,7 +28,6 @@ Then activate the virtual environment and instal the required packages::
 
   source venv_specification/bin/activate
   pip install sphinx sphinx_rtd_theme
-  pip install -r cellml-specification/requirements.txt
 
 That completes the environment setup required for building the documentation.
 Once the environment is completed, the HTML form of the documentation can be built with the following commands::
