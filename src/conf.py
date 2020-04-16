@@ -241,11 +241,11 @@ html_theme_options = {
 # Automagically convert all :ref: blocks to show a tooltip using the hoverxref
 # extension. Other roles listed will have tooltips too.
 hoverxref_auto_ref = True
-hoverxref_roles = ['numref']
-hoverxref_role_types = {
-    'ref': 'tooltip',     # for hoverxref_auto_ref config
-    'numref': 'tooltip',  # for tables and figures
-}
+hoverxref_roles = ['numfig']
+# hoverxref_role_types = {
+#     'ref': 'tooltip',     # for hoverxref_auto_ref config
+#     'numfig': 'tooltip',  # for tables and figures
+# }
 hoverxref_sphinxtabs = False
 
 # Add any paths that contain custom themes here, relative to this directory.
