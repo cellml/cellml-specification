@@ -35,7 +35,7 @@ A "units reference" is an attribute value that specifies the physical units a va
 
 #. The units identified by a units reference SHALL be determined as follows:
 
-   #. If the units reference is identical to a value in the "Name" column of :ref:`Table 2.1: Built-in units<table_built_in_units>`, then it SHALL refer to the built-in units from the same row of the table.
+   #. If the units reference is identical to a value in the "Name" column of :numref:`Table %s: Built-in units<table_built_in_units>`, then it SHALL refer to the built-in units from the same row of the table.
 
    #. If the units reference is identical to the value of the :code:`name` attribute of a :code:`units` element in the same infoset, then it SHALL refer to the units specified by that element.
 
@@ -47,9 +47,8 @@ A "units reference" is an attribute value that specifies the physical units a va
 
 .. marker_units_reference1
 
-.. _table_built_in_units:
-
-**Table 3.1: Built-in units**
+.. table:: Built-in units
+   :name: table_built_in_units
 
 +-----------------------+----------------------------------------------+
 | | **Name**            | | **Unit reduction tuple**                   |
@@ -144,7 +143,7 @@ Interpretation of ``units`` elements
    1. The prefix term is a conceptual property of :code:`unit` elements.
       If the :code:`unit` element does not have a :code:`prefix` attribute, the prefix term SHALL have value 0.
       If the :code:`prefix` attribute has a value which is an :ref:`integer string<specA_integer>`, then the value of the prefix term SHALL be the numerical value of that string.
-      Otherwise, the :code:`prefix` attribute MUST have a value taken from the "Name" column of :ref:`Table 3.2: Prefix values<table_prefix_values>`, and the prefix term SHALL have the value taken from the "Value" column of the same row.
+      Otherwise, the :code:`prefix` attribute MUST have a value taken from the "Name" column of :numref:`Table %s: Prefix values<table_prefix_values>`, and the prefix term SHALL have the value taken from the "Value" column of the same row.
 
    2. The exponent term is a conceptual property of :code:`unit` elements.
       If a :code:`unit` element has no :code:`exponent` attribute, the exponent term SHALL have value 1.0.
@@ -171,7 +170,7 @@ Interpretation of ``units`` elements
 
    1. The units defined in a model that are not defined in terms of other units (i.e. the set of :code:`units` elements in the :ref:`CellML model<specA_cellml_model>` which have no :code:`unit` child elements).
 
-   2. The built-in irreducible units (those built-in units with "-" in the "Unit Reduction" column of :ref:`Table 2.1: Built-in units<table_built_in_units>`) referenced by variables or other units in the model.
+   2. The built-in irreducible units (those built-in units with "-" in the "Unit Reduction" column of :numref:`Table %s: Built-in units<table_built_in_units>`) referenced by variables or other units in the model.
 
 .. marker_interpretation_of_units_2
 
@@ -187,7 +186,7 @@ Interpretation of ``units`` elements
 
       1. If the :ref:`units reference<specC_units_reference>` of the :code:`unit` child element is to a single unit which is an irreducible unit, then the set of tuples SHALL have a single member, which SHALL consist of the name of the irreducible unit being referenced and the exponent 1.0.
 
-      2. If the units reference of the :code:`unit` child element is to built-in units other than an :ref:`irreducible unit<specC_irreducible_units>`, then the tuples SHALL be derived directly from :ref:`Table 2.1: Built-in units<table_built_in_units>`.
+      2. If the units reference of the :code:`unit` child element is to built-in units other than an :ref:`irreducible unit<specC_irreducible_units>`, then the tuples SHALL be derived directly from :numref:`Table %s: Built-in units<table_built_in_units>`.
          Specifically, the set of tuples SHALL consist of the tuples given in the "Unit reduction tuple set" column of the row for which the value in the "Name" column matches the name of the units reference.
 
       3. If the units reference of the :code:`unit` child element is to a unit which is neither built-in, nor an irreducible unit, then the set of tuples SHALL be defined recursively as the set of tuples for the :code:`units` element so referenced.
@@ -203,9 +202,8 @@ Interpretation of ``units`` elements
 
 .. marker_interpretation_of_units_3
 
-.. _table_prefix_values:
-
-**Table 3.2: Prefix values**
+.. table:: Prefix values
+   :name: table_prefix_values
 
 ============== ==========
 **Name**       **Value**
