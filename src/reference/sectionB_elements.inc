@@ -360,7 +360,7 @@ A :code:`math` element information item (referred to in this specification as a 
 
 .. container:: issue-math-child
 
-   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :ref:`Table 2.1: Supported MathML elements<table_supported_mathml_elements>`.
+   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :numref:`Table %s: Supported MathML elements<table_supported_mathml_elements>`.
 
 .. marker_math_2
 
