@@ -221,6 +221,7 @@ pygments_style = 'sphinx'
 
 # If true, enable figure numbering
 numfig = True
+numfig_format = {'figure': 'Figure %s: ', 'table': 'Table %s: '}
 
 # -- Options for HTML output ----------------------------------------------
 
