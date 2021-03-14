@@ -431,7 +431,9 @@ Interpretation of ``map_variables`` elements
 
     It is noted, for the avoidance of doubt, that if components *AA* and *BB* are in each other's :ref:`hidden set<specC_hidden_set>`, there are no applicable interfaces for the variables *A* and *B*.
 
-8.  CellML models MUST only contain :code:`map_variables` elements where the applicable interfaces for both variables are available.
+.. container:: issue-3-10-8
+
+   8.  CellML models MUST only contain :code:`map_variables` elements where the applicable interfaces for both variables are available.
 
 .. marker_interpretation_of_map_variables_4
 
