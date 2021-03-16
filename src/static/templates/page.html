@@ -108,8 +108,10 @@
     const url_object = new URL(window.location.href);
     const code = url_object.searchParams.get("issue");
     if (code != null) {
-      let issueCode = issueToSection(code);
+      let issueCode = issueToSection[code];
+      alert(issueCode);
       let contents = $(issueCode).html();
+      alert(contents)
       let title = "<div style='color:saddlebrown;font-weight:700;padding-bottom:10px;'>Section ";
       title += code + "</div>";
       $(issueCode).html(title + contents);
