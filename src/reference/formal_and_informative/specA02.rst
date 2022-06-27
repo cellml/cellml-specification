@@ -1,4 +1,4 @@
-.. _specA2:
+.. _specA02:
 
 .. include:: ../sectionA_definitions.inc
   :start-after: marker_cellml_information_sets_start

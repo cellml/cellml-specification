@@ -175,6 +175,7 @@ Interpretation of ``units`` elements
    2. The built-in irreducible units (those built-in units with "-" in the "Unit reduction tuple" column of :numref:`Table {number}: {name}<table_built_in_units>`) referenced by variables or other units in the model.
 
 .. marker_interpretation_of_units_2
+.. _specC_unit_reduction
 
 3. The "unit reduction" is a conceptual property of :code:`units` elements.
    It consists of a set of tuples where each tuple is composed of a "unit name" and a real-valued "exponent".
@@ -324,7 +325,7 @@ Effect of ``units`` on a ``variable``
 Interpretation of ``math`` elements
 -----------------------------------
 
-#. The following :code:`component` elements SHALL, for the purposes of this specification, be "pertinent component elements":
+1. The following :code:`component` elements SHALL, for the purposes of this specification, be "pertinent component elements":
 
    #. All :code:`component` elements in the top-level :ref:`CellML infoset<specA_cellml_infoset>` for the :ref:`CellML model<specA_cellml_model>`;
 
@@ -332,9 +333,14 @@ Interpretation of ``math`` elements
 
    #. All :code:`component` elements which are descendants in the encapsulation digraph (see :numref:`{number} {name}<specC_interpretation_of_encapsulation>`) of a pertinent :code:`component` element.
 
-#. Every MathML element in the CellML model which appears as a direct child of a MathML :code:`math` element, which in turn appears as a child of a pertinent :code:`component` element, SHALL be treated, in terms of the semantics of the mathematical model, as a statement which holds true unconditionally.
+.. marker_interpretation_of_mathematics_1
 
-#. Units referenced by a :code:`units` attribute SHALL NOT affect the mathematical interpretation of the CellML model.
+2. Every MathML element in the CellML model which appears as a direct child of a MathML :code:`math` element, which in turn appears as a child of a pertinent :code:`component` element, SHALL be treated, in terms of the semantics of the mathematical model, as a statement which holds true unconditionally.
+
+.. marker_interpretation_of_mathematics_2
+.. _specC_units_and_maths:
+
+3. Units referenced by a :code:`units` attribute SHALL NOT affect the mathematical interpretation of the CellML model.
 
 .. marker_interpretation_of_mathematics_end
 .. marker_interpretation_of_encapsulation_start
@@ -400,6 +406,7 @@ Interpretation of ``map_variables`` elements
 
 5.  The variable equivalence network MUST NOT contain any cycles.
 
+.. _specC_equivalent_variables_units:
 .. marker_interpretation_of_map_variables_3
 
 6.  For a given variable, the "available interfaces" SHALL be determined by the value of the :code:`interface` attribute on the corresponding :code:`variable` element as follows:
@@ -424,7 +431,9 @@ Interpretation of ``map_variables`` elements
 
     It is noted, for the avoidance of doubt, that if components *AA* and *BB* are in each other's :ref:`hidden set<specC_hidden_set>`, there are no applicable interfaces for the variables *A* and *B*.
 
-8.  CellML models MUST only contain :code:`map_variables` elements where the applicable interfaces for both variables are available.
+.. container:: issue-3-10-8
+
+   8.  CellML models MUST only contain :code:`map_variables` elements where the applicable interfaces for both variables are available.
 
 .. marker_interpretation_of_map_variables_4
 
@@ -442,23 +451,24 @@ Interpretation of ``map_variables`` elements
      Each set of equivalent variables represents one variable in the underlying mathematical model.
 
 .. marker_interpretation_of_map_variables_end
-.. marker_interpretation_of_variable_resets_start
-
-.. _specC_interpretation_of_variable_resets:
-
+.. marker_interpretation_of_resets_start
 
 Interpretation of ``reset`` elements
 ------------------------------------
 
-#. For the purposes of this section, we define the "reset variable" to be the variable referenced by a :code:`reset` element's :code:`variable` attribute, and the "test variable" to be the variable referenced by its :code:`test_variable` attribute.
+1. For the purposes of this section, we define the "reset variable" to be the variable referenced by a :code:`reset` element's :code:`variable` attribute, and the "test variable" to be the variable referenced by its :code:`test_variable` attribute.
 
-#. Each :code:`reset` element describes a change to be applied to the reset variable when specified conditions are met during the simulation of the model.
+2. Each :code:`reset` element describes a change to be applied to the reset variable when specified conditions are met during the simulation of the model.
 
-#. All :code:`reset` elements SHALL be considered sequentially for the equivalent variable set (see :numref:`{number} {name}<specC_interpretation_of_map_variables>`) to which the reset variable belongs.
+.. marker_interpretation_of_resets_1
+
+3. All :code:`reset` elements SHALL be considered sequentially for the equivalent variable set (see :numref:`{number} {name}<specC_interpretation_of_map_variables>`) to which the reset variable belongs.
    The sequence SHALL be determined by the value of the reset element’s :code:`order` attribute, lowest (least positive / most negative) having priority.
 
-#. The condition under which a reset occurs SHALL be defined by the equality of evaluation of the test variable and the evaluation of the MathML expression encoded in the :code:`test_value`.
+.. marker_interpretation_of_resets_2
 
-#. When a reset occurs, the reset variable SHALL be set to the result of evaluating the MathML expression encoded in the :code:`reset_value`.
+4. The condition under which a reset occurs SHALL be defined by the equality of evaluation of the test variable and the evaluation of the MathML expression encoded in the :code:`test_value`.
 
-.. marker_interpretation_of_variable_resets_end
+5. When a reset occurs, the reset variable SHALL be set to the result of evaluating the MathML expression encoded in the :code:`reset_value`.
+
+.. marker_interpretation_of_resets_end

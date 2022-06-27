@@ -1,4 +1,4 @@
-.. _specA3:
+.. _specA03:
 
 .. include:: ../sectionA_definitions.inc
   :start-after: marker_data_formats_start

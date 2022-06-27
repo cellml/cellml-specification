@@ -59,7 +59,7 @@ def define_excluded_patterns():
                         'reference/informative/informB9_reset1.rst',
                         'reference/informative/informC07_effect_of_units_on_variables.rst',
                         'reference/informative/informC08_interpretation_of_mathematics.rst',
-                        'reference/informative/informC11_interpretation_of_variable_resets.rst',
+                        'reference/informative/informC11_interpretation_of_resets*',
                         'reference/formal_only/*', ]
     if build_type == 'Normative':
         exclude_patterns = ['master_index.rst',
@@ -124,6 +124,7 @@ extlinks = {
     'cellml2spec_display': ('https://cellml.org/specifications/cellml_2.0%s', None),
     'cellsolver': ('https://github.com/hsorby/cellsolver%s', ''),
     'cmake': ('https://cmake.org/%s', ''),
+    'cvode': ('https://computing.llnl.gov/projects/sundials/cvode%s', ''),
     'doxygen': ('http://www.doxygen.nl/%s', ''),
     'euler_method': ('https://en.wikipedia.org/wiki/Euler_method%s', ''),
     'git': ('https://git-scm.com/%s', ''),
@@ -145,7 +146,7 @@ extlinks = {
 
     'namespace_help': ('https://www.w3schools.com/xml/xml_namespaces.asp%s', ''),
     'opencor': ('https://opencor.ws/%s', ''),
-    'pmr': ('https://models.physiomeproject.org/welcome/%s', ''),
+    'pmr': ('https://models.physiomeproject.org/%s', ''),
     'python': ('https://www.python.org/%s', ''),
 
     # These should be identical: one for links, one for full URL display
@@ -268,7 +269,11 @@ html_context = {
 # Automagically convert all :ref: blocks to show a tooltip using the hoverxref
 # extension.
 hoverxref_auto_ref = True
-hoverxref_roles = ['term', 'code']
+hoverxref_roles = ['ref', 'numref']
+hoverxref_role_types = {
+    'ref': 'tooltip',       
+    'numref': 'tooltip',    
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = ['@SPHINX_THEME_DIR@']

@@ -2,6 +2,7 @@
 
 .rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
     color: darkslategray;
+    font-family: "Consolas", "Menlo", "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", "Monospace";
 }
 
 .wy-plain-list-decimal, .rst-content .section ol, .rst-content ol.arabic, article ol {
@@ -44,16 +45,19 @@ li {
     margin-bottom: 12px;
 }
 
+.shortlist * {
+    margin-bottom: 3px;
+}
+
 .issue-title {
     font-weight: 700;
     font-size: large;
 }
 
 .highlight-issue {
-    background-color: rgba(255, 255, 0, 0.2);
+    background-color: rgb(254, 240, 219);
     font-weight: 500;
     padding: 10px;
-    border-left: solid 5px saddlebrown;
 }
 
 .dothis {
@@ -70,6 +74,8 @@ li {
     color: rgb(30, 46, 0);
 }
 
+/* Toggle container class for displaying/hiding the "Show more" and "Show CellML syntax" blocks */
+
 .toggle .header {
     display: block;
     clear: both;
@@ -79,11 +85,11 @@ li {
     margin-bottom: 15px;
 }
 
-.toggle .header:after {
+.toggle .header p:after {
     content: " +";
 }
 
-.toggle .header.open:after {
+.toggle .header.open p:after {
     content: " -";
 }
 
@@ -149,6 +155,13 @@ li {
     font-weight: 700;
 }
 
+.heading4 {
+    color: #444444;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", "Arial", sans-serif;
+    font-size: 120%;
+    font-weight: 600;
+}
+
 .terminal {
     border: none;
     color: white;
@@ -157,3 +170,10 @@ li {
     font-family: "Consolas", "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", monospace;
     font-size: 0.85em;
 }
+
+table.align-default {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
