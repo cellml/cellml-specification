@@ -19,9 +19,13 @@ import datetime
 date_today = datetime.datetime.today()
 
 unofficial = True
+target_cellml_org = False
 
 if unofficial:
   tags.add('unofficial')
+
+if target_cellml_org:
+  tags.add('target_cellml_org')
 
 build_type = os.environ['CELLML_SPEC_BUILD'] if 'CELLML_SPEC_BUILD' in os.environ else 'Normative'
 if build_type not in ('Normative', 'Full'):
@@ -193,9 +197,9 @@ copyright = u'2019-{0}, CellML Editors and Contributors'.format(
 # built documents.
 #
 # The short X.Y version.
-version = '2.0'
+version = '2.1'
 # The full version, including alpha/beta/rc tags.
-release = '2.0'
+release = '2.1'
 if unofficial:
     version += '-unofficial'
     release += '-unofficial'
@@ -259,6 +263,7 @@ html_theme_options = {
 # Pass options through to the template
 html_context = {
   'unofficial': unofficial,
+  'target_cellml_org': target_cellml_org,
 }
 
 # Automagically convert all :ref: blocks to show a tooltip using the hoverxref

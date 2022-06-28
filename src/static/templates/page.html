@@ -2,11 +2,15 @@
 
 {% block body %}
 
-<div class="cellml-spec">
+  {% if target_cellml_org %}
+    <div class="cellml-spec">
+  {% endif %}
 
   {{ body }}
 
-</div>
+  {% if target_cellml_org %}
+    </div>
+  {% endif %}
 
 {% endblock %}
 
