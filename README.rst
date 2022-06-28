@@ -104,3 +104,15 @@ then run the command::
 Now launch your internet browser and open the location::
 
   http://localhost:8008/
+
+Building the documentation for cellml.org
+-----------------------------------------
+
+The documentation required for cellml.org can be built from this repository.
+The documenation can be built by setting the variable `target_cellml_org` to `True` in the `conf.py` file and then building the documentation with the single html builder.
+With `target_cellml_org = True` saved in the `conf.py` file the command::
+
+  make singlehtml
+
+will create a file `index.html` in the directory `build/singlehtml` relative to the root of the repository directory.
+The contents of the `index.html` can be copied and pasted into cellml.org.
