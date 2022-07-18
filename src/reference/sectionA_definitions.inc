@@ -117,7 +117,7 @@ Specific information items
 
    #. An unexpanded entity reference information item;
 
-   #. A document type declaration information item;
+   #. A document type declan information item;
 
    #. An unparsed entity information item; or
 
@@ -174,7 +174,8 @@ XML ID Attributes
 ~~~~~~~~~~~~~~~~~
 
 #. Any element information item in the :ref:`CellML namespace<specA_cellml_namespace>` MAY contain an attribute with local name :code:`id.`
-   This attribute SHALL be treated as having attribute type ID, as defined in :xml_1_1:`Section 3.3.1 <#sec-attribute-types>` of :xml_1_1:`XML 1.1 <>` [:ref:`5<ref_xml_1_1>`].
+
+   #. This attribute SHALL be treated as having attribute type ID, as defined in :xml_1_1:`Section 3.3.1 <#sec-attribute-types>` of :xml_1_1:`XML 1.1 <>` [:ref:`5<ref_xml_1_1>`].
 
 .. marker_cellml_information_sets_end
 .. marker_data_formats_start
