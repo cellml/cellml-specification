@@ -117,7 +117,7 @@ Specific information items
 
    #. An unexpanded entity reference information item;
 
-   #. A document type declan information item;
+   #. A document type declaration information item;
 
    #. An unparsed entity information item; or
 
