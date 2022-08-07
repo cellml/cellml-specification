@@ -1,8 +1,8 @@
 .. _sectionC_index_formal:
 
-==============
-Interpretation
-==============
+================
+3 Interpretation
+================
 
 .. toctree::
     :maxdepth: 1
