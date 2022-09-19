@@ -1,7 +1,7 @@
 .. _sectionD_index_formal:
 
-==========
-References
-==========
+============
+4 References
+============
 
 .. include:: sectionD_references.inc

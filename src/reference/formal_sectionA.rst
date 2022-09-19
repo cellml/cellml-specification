@@ -1,8 +1,8 @@
 .. _sectionA_index_formal:
 
-===========
-Definitions 
-===========
+=============
+1 Definitions 
+=============
 
 .. toctree::
     :maxdepth: 2

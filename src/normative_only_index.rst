@@ -20,7 +20,6 @@ The official version of the CellML Normative Specification is available at :cell
 
 .. toctree::
     :maxdepth: 2
-    :numbered:
 
     reference/formal_sectionA.rst
     reference/formal_sectionB.rst
