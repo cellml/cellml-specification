@@ -310,9 +310,10 @@ A :code:`reset` element information item (referred to in this specification as a
    .. container:: issue-2-9-1-3
 
       3. The :code:`order` attribute.
-         The value of the :code:`order` attribute MUST be an :ref:`integer string<specA_integer>`.
 
-         The value of the :code:`order` attribute MUST be unique for all :code:`reset` elements with :code:`variable` attributes that reference variables in the same equivalent variable set (see :numref:`{number} {name}<specC_interpretation_of_map_variables>`).
+         1. The value of the :code:`order` attribute MUST be an :ref:`integer string<specA_integer>`.
+
+         2. The value of the :code:`order` attribute MUST be unique for all :code:`reset` elements with :code:`variable` attributes that reference variables in the same equivalent variable set (see :numref:`{number} {name}<specC_interpretation_of_map_variables>`).
 
 .. marker_reset_3
 
@@ -392,7 +393,9 @@ A :code:`math` element information item (referred to in this specification as a 
 
 .. container:: issue-2-12-5
 
-   5. A MathML :code:`cn` element MUST be base 10, and MUST be of the following :mathml2help:`types<#contm.typeattrib>`\: real or e-notation.
+   5. A MathML :code:`cn` element MUST be base 10.
+
+      1. A :code:`cn` element MUST be one of the following :mathml2help:`types<#contm.typeattrib>`\: real or e-notation.
 
 
    6. A MathML :code:`degree` element MUST be a child of a MathML :code:`root` element or a MathML :code:`diff` element.
