@@ -524,8 +524,8 @@ A :code:`connection` element information item (referred to in this specification
 
 .. _map_variables:
 
-The ``map_variables`` element
------------------------------
+2.16 The ``map_variables`` element
+----------------------------------
 
 A :code:`map_variables` element information item (referred to in this specification as a :code:`map_variables` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`map_variables`, which appears as a child of a :code:`connection` element.
 
