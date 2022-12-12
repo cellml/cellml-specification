@@ -311,6 +311,12 @@ A :code:`reset` element information item (referred to in this specification as a
          
          1. The value of the :code:`test_variable` attribute MUST be a valid variable reference, as defined in :numref:`{number} {name}<specC_variable_reference>`.
 
+      3. The :code:`order` attribute.
+
+         1. The value of the :code:`order` attribute MUST be an :ref:`integer string<specA_integer>`.
+
+         2. The value of the :code:`order` attribute MUST be unique for all :code:`reset` elements with :code:`variable` attributes that reference variables in the same equivalent variable set (see :numref:`{number} {name}<specC_interpretation_of_map_variables>`).
+
 .. marker_reset_2
 
    .. container:: issue-2-9-1-3
