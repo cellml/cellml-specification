@@ -191,15 +191,21 @@ A :code:`unit` element information item (referred to in this specification as a 
 
       .. container:: issue-2-6-2-1
 
-         1. The :code:`prefix` attribute. If present, the value of the attribute MUST meet the constraints specified in :numref:`{number} {name}<specC_interpretation_of_units>`.
+         1. The :code:`prefix` attribute.
+
+            1. If present, the value of the attribute MUST meet the constraints specified in :numref:`{number} {name}<specC_interpretation_of_units>`.
 
       .. container:: issue-2-6-2-2
 
-         2. The :code:`multiplier` attribute. If present, the value of the attribute MUST be a :ref:`real number string<specA_real_number>`.
+         2. The :code:`multiplier` attribute.
+
+            1. If present, the value of the attribute MUST be a :ref:`real number string<specA_real_number>`.
 
       .. container:: issue-2-6-2-3
 
-         3. The :code:`exponent` attribute. If present, the value of the attribute MUST be a :ref:`real number string<specA_real_number>`.
+         3. The :code:`exponent` attribute.
+
+            1. If present, the value of the attribute MUST be a :ref:`real number string<specA_real_number>`.
 
 .. note::
 
