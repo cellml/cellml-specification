@@ -64,6 +64,7 @@ def define_excluded_patterns():
     if build_type == 'Normative':
         exclude_patterns = ['master_index.rst',
                             'reference/index_section*',
+                            'reference/examples/*/*.rst',
                             'reference/formal_and_informative/*.rst',
                             'reference/informative/*.rst',
                             'reference/libcellml/*.rst', ]
@@ -117,65 +118,65 @@ autosectionlabel_prefix_document = True
 #   OR, where you want to print out the URL to the rendered version:
 #   'shortcut': ('http://linkhere%s', None) then use :shortcut:`/` in the text to display full URL, including the trailing slash.
 extlinks = {
-    'buildbot': ('https://buildbot.net%s', ''),
-    'calvin_and_hobbes': ('https://www.gocomics.com/calvinandhobbes/%s', ''),
-    'cellml1to2': ('https://github.com/hsorby/cellml1to2%s', ''),
+    'buildbot': ('https://buildbot.net%s', None),
+    'calvin_and_hobbes': ('https://www.gocomics.com/calvinandhobbes/%s', None),
+    'cellml1to2': ('https://github.com/hsorby/cellml1to2%s', None),
     'cellml2namespace': ('http://www.cellml.org/cellml/2.0%s', None),
     'cellml2spec_display': ('https://cellml.org/specifications/cellml_2.0%s', None),
-    'cellsolver': ('https://github.com/hsorby/cellsolver%s', ''),
-    'cmake': ('https://cmake.org/%s', ''),
-    'cvode': ('https://computing.llnl.gov/projects/sundials/cvode%s', ''),
-    'doxygen': ('http://www.doxygen.nl/%s', ''),
-    'euler_method': ('https://en.wikipedia.org/wiki/Euler_method%s', ''),
-    'git': ('https://git-scm.com/%s', ''),
-    'github': ('https://github.com/%s', ''),
-    'google_styleguide': ('https://google.github.io/styleguide/cppguide.html/%s', ''),
-    'libcellml': ('https://libcellml.org/%s', ''),
-    'libcellml_repo': ('https://github.com/cellml/libcellml.git%s', ''),
-    'libxml2': ('http://www.xmlsoft.org/%s', ''),
+    'cellsolver': ('https://github.com/hsorby/cellsolver%s', None),
+    'cmake': ('https://cmake.org/%s', None),
+    'cvode': ('https://computing.llnl.gov/projects/sundials/cvode%s', None),
+    'doxygen': ('http://www.doxygen.nl/%s', None),
+    'euler_method': ('https://en.wikipedia.org/wiki/Euler_method%s', None),
+    'git': ('https://git-scm.com/%s', None),
+    'github': ('https://github.com/%s', None),
+    'google_styleguide': ('https://google.github.io/styleguide/cppguide.html/%s', None),
+    'libcellml': ('https://libcellml.org/%s', None),
+    'libcellml_repo': ('https://github.com/cellml/libcellml.git%s', None),
+    'libxml2': ('http://www.xmlsoft.org/%s', None),
 
     # These should be identical: one for links, one for full URL display
-    'mathml2':         ('https://www.w3.org/TR/MathML2%s', ''),
+    'mathml2':         ('https://www.w3.org/TR/MathML2%s', None),
     'mathml2_display': ('https://www.w3.org/TR/MathML2%s', None),
 
-    'mathml2help': ('https://www.w3.org/TR/MathML2/chapter4.html%s', ''),
+    'mathml2help': ('https://www.w3.org/TR/MathML2/chapter4.html%s', None),
 
     # This will get MathML added to the end so it becomes http://www.w3.org/1998/Math/MathML
     # in the final display, to avoid trailing slashes.
     'mathml2namespace': ('http://www.w3.org/1998/Math/%s', None),
 
-    'namespace_help': ('https://www.w3schools.com/xml/xml_namespaces.asp%s', ''),
-    'opencor': ('https://opencor.ws/%s', ''),
-    'pmr': ('https://models.physiomeproject.org/%s', ''),
-    'python': ('https://www.python.org/%s', ''),
+    'namespace_help': ('https://www.w3schools.com/xml/xml_namespaces.asp%s', None),
+    'opencor': ('https://opencor.ws/%s', None),
+    'pmr': ('https://models.physiomeproject.org/%s', None),
+    'python': ('https://www.python.org/%s', None),
 
     # These should be identical: one for links, one for full URL display
-    'rfc2119':         ('https://www.ietf.org/rfc/rfc2119.txt%s', ''),
+    'rfc2119':         ('https://www.ietf.org/rfc/rfc2119.txt%s', None),
     'rfc2119_display': ('https://www.ietf.org/rfc/%s', None),
 
-    'sphinx': ('http://sphinx-doc.org/%s', ''),
-    'swig': ('http://www.swig.org/%s', ''),
-    'unicode': ('http://www.fileformat.info/info/unicode/char/%s/index.htm', 'U+'),
+    'sphinx': ('http://sphinx-doc.org/%s', None),
+    'swig': ('http://www.swig.org/%s', None),
+    'unicode': ('http://www.fileformat.info/info/unicode/char/%s/index.htm', 'U+%s'),
 
     # These should be identical: one for links, one for full URL display
-    'unicode13':         ('https://www.unicode.org/versions/Unicode13.0.0%s', ''),
+    'unicode13':         ('https://www.unicode.org/versions/Unicode13.0.0%s', None),
     'unicode13_display': ('https://www.unicode.org/versions/Unicode13.0.0%s', None),
 
     # These should be identical: one for links, one for full URL display
-    'xlink':         ('https://www.w3.org/TR/xlink11%s', ''),
+    'xlink':         ('https://www.w3.org/TR/xlink11%s', None),
     'xlink_display': ('https://www.w3.org/TR/xlink11%s', None),
 
-    'xml_help': ('https://www.w3.org/XML/%s', ''),
+    'xml_help': ('https://www.w3.org/XML/%s', None),
 
     # These should be identical: one for links, one for full URL display
-    'xml_1_1':         ('https://www.w3.org/TR/xml11%s', ''),
+    'xml_1_1':         ('https://www.w3.org/TR/xml11%s', None),
     'xml_1_1_display': ('https://www.w3.org/TR/xml11%s', None),
 
     # These should be identical: one for links, one for full URL display
-    'xml_infoset':         ('https://www.w3.org/TR/2004/REC-xml-infoset-20040204/%s', ''),
+    'xml_infoset':         ('https://www.w3.org/TR/2004/REC-xml-infoset-20040204/%s', None),
     'xml_infoset_display': ('https://www.w3.org/TR/2004/REC-xml-infoset-20040204%s', None),
 
-    'xml_namespace_1_1':         ('https://www.w3.org/TR/xml-names11%s', ''),
+    'xml_namespace_1_1':         ('https://www.w3.org/TR/xml-names11%s', None),
     'xml_namespace_1_1_display': ('https://www.w3.org/TR/xml-names11%s', None),
 
 }
@@ -197,9 +198,9 @@ copyright = u'2019-{0}, CellML Editors and Contributors'.format(
 # built documents.
 #
 # The short X.Y version.
-version = '2.1'
+version = '2.0'
 # The full version, including alpha/beta/rc tags.
-release = '2.1'
+release = '2.0.1.rc1'
 if unofficial:
     version += '-unofficial'
     release += '-unofficial'
@@ -354,7 +355,7 @@ htmlhelp_basename = 'CellMLdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_engine = 'xelatex'
+latex_engine = 'lualatex'
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
