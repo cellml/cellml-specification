@@ -47,7 +47,7 @@ def manage_index(direction, base_dir=''):
 def tex_document_name():
     name = 'cellml2_specification'
     if build_type == 'Normative':
-        name = 'cellml2_normative_specification'
+        name = 'cellml_2_0_1_normative_specification'
 
     return name
 
