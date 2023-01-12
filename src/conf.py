@@ -18,8 +18,13 @@ import datetime
 
 date_today = datetime.datetime.today()
 
-unofficial = True
-target_cellml_org = False
+unofficial = False
+target_cellml_org = True
+
+# The short X.Y version.
+version = '2.0'
+# The full version, including alpha/beta/rc tags.
+release = '2.0.1.rc1'
 
 if unofficial:
   tags.add('unofficial')
@@ -193,14 +198,6 @@ project = u'CellML'
 copyright = u'2019-{0}, CellML Editors and Contributors'.format(
     date_today.year)
 
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
-#
-# The short X.Y version.
-version = '2.0'
-# The full version, including alpha/beta/rc tags.
-release = '2.0.1.rc1'
 if unofficial:
     version += '-unofficial'
     release += '-unofficial'
