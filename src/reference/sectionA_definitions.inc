@@ -4,8 +4,8 @@
 
 .. _specA_terminology:
 
-1.1 Terminology
----------------
+Terminology
+-----------
 
 The keywords "MUST", "MUST NOT", "SHALL", "SHALL NOT", and "MAY" in this document are to be interpreted as described in :rfc2119:`RFC 2119 <>` [:ref:`1<ref_rfc2119>`].
 
@@ -92,18 +92,18 @@ Any one of the Unicode characters :unicode:`0009`, :unicode:`000A`, :unicode:`00
 
 .. _specA_cellml_information_sets:
 
-1.2 CellML information sets
----------------------------
+CellML information sets
+-----------------------
 
-1.2.1 CellML and XML
-~~~~~~~~~~~~~~~~~~~~
+CellML and XML
+~~~~~~~~~~~~~~
 
 1. Every :ref:`CellML infoset<specA_cellml_infoset>` SHALL be represented in an XML information set which conforms with the well-formedness requirements of :xml_1_1:`XML 1.1 <>` [:ref:`5<ref_xml_1_1>`].
 
 2. In this document, the remaining provisions relating to CellML infosets SHALL be interpreted as additional constraints on the XML information set represented by a CellML infoset.
 
-1.2.2 Specific information items
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Specific information items
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. For the purposes of this specification, a specific information item is one of the following (see :xml_infoset_display:`/` for definitions):
 
@@ -131,8 +131,8 @@ Any one of the Unicode characters :unicode:`0009`, :unicode:`000A`, :unicode:`00
 
 
 
-1.2.3 Non-specific information items
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Non-specific information items
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. For the purposes of this specification, a non-specific information item is one of the following (see :xml_infoset_display:`/` for definitions):
 
@@ -159,8 +159,8 @@ Any one of the Unicode characters :unicode:`0009`, :unicode:`000A`, :unicode:`00
 
 .. marker_cellml_information_sets_4
 
-1.2.4 Use of namespaces
-~~~~~~~~~~~~~~~~~~~~~~~
+Use of namespaces
+~~~~~~~~~~~~~~~~~
 
 1. Element information items in a :ref:`CellML infoset<specA_cellml_infoset>` MUST belong to one of the following namespaces, unless explicitly indicated otherwise:
 
@@ -170,8 +170,8 @@ Any one of the Unicode characters :unicode:`0009`, :unicode:`000A`, :unicode:`00
 
 2. Attribute information items in a CellML element MUST NOT be prefixed with a namespace, unless explicitly indicated otherwise.
 
-1.2.5 XML ID Attributes
-~~~~~~~~~~~~~~~~~~~~~~~
+XML ID Attributes
+~~~~~~~~~~~~~~~~~
 
 1. Any element information item in the :ref:`CellML namespace<specA_cellml_namespace>` MAY contain an attribute with local name :code:`id.`
 
@@ -182,8 +182,8 @@ Any one of the Unicode characters :unicode:`0009`, :unicode:`000A`, :unicode:`00
 
 .. _specA_data_representation_formats:
 
-1.3 Data representation formats in CellML
------------------------------------------
+Data representation formats in CellML
+-------------------------------------
 
 The following data representation formats are defined for use in this specification:
 

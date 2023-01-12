@@ -1,8 +1,8 @@
 .. _sectionB_index_formal:
 
-===========================
-2 Element information items
-===========================
+=========================
+Element information items
+=========================
 
 .. toctree::
     :maxdepth: 1

@@ -4,8 +4,8 @@
 
 .. _specC_interpretation_of_imports:
 
-3.1 Interpretation of ``import`` elements
------------------------------------------
+Interpretation of ``import`` elements
+-------------------------------------
 
 1. Each :code:`import units` or :code:`import component` element present in a :ref:`CellML infoset<specA_cellml_infoset>` (the importing infoset) SHALL define a new and distinct instance of the CellML infoset (the imported infoset) that is specified by the parent :code:`import` element's :code:`href` attribute.
 
@@ -26,8 +26,8 @@
 
 .. _specC_units_reference:
 
-3.2 Units references
---------------------
+Units references
+----------------
 
 A "units reference" is an attribute value that specifies the physical units a variable or number is in.
 
@@ -138,8 +138,8 @@ A "units reference" is an attribute value that specifies the physical units a va
 
 .. _specC_interpretation_of_units:
 
-3.3 Interpretation of ``units`` elements
-----------------------------------------
+Interpretation of ``units`` elements
+------------------------------------
 
 1. The :code:`units` element SHALL be interpreted as the product of its
    :code:`unit` element children, according to the following rules:
@@ -180,7 +180,7 @@ A "units reference" is an attribute value that specifies the physical units a va
    2. The built-in irreducible units (those built-in units with "-" in the "Unit reduction tuple" column of :numref:`Table {number}: {name}<table_built_in_units>`) referenced by variables or other units in the model.
 
 .. marker_interpretation_of_units_2
-.. _specC_unit_reduction
+.. _specC_unit_reduction:
 
 3. The "unit reduction" is a conceptual property of :code:`units` elements.
    It consists of a set of tuples where each tuple is composed of a "unit name" and a real-valued "exponent".
@@ -254,8 +254,8 @@ A "units reference" is an attribute value that specifies the physical units a va
 
 .. _specC_component_reference:
 
-3.4 Component references
-------------------------
+Component references
+--------------------
 
 A "component reference" is an attribute value that specifies a CellML component.
 
@@ -278,8 +278,8 @@ A "component reference" is an attribute value that specifies a CellML component.
 
 .. _specC_variable_reference:
 
-3.5 Variable references
------------------------
+Variable references
+-------------------
 
 A "variable reference" is an attribute value that specifies a CellML variable.
 
@@ -301,8 +301,8 @@ A "variable reference" is an attribute value that specifies a CellML variable.
 .. _specC_interpretation_of_initial_values:
 
 
-3.6 Interpretation of ``initial_value`` attributes
---------------------------------------------------
+Interpretation of ``initial_value`` attributes
+----------------------------------------------
 
 1. The conditions under which initial values hold are (by design) not defined in a :ref:`CellML model<specA_cellml_model>`.
 
@@ -318,8 +318,8 @@ A "variable reference" is an attribute value that specifies a CellML variable.
 .. _specC_effect_of_units_on_variables:
 
 
-3.7 Effect of ``units`` on a ``variable``
------------------------------------------
+Effect of ``units`` on a ``variable``
+-------------------------------------
 
 1. The target of the :code:`units` attribute on a variable is referred to as the "variable units", and the corresponding unit reduction (see :numref:`{number} {name}<specC_interpretation_of_units>`) is referred to as the "variable unit reduction".
 
@@ -329,8 +329,8 @@ A "variable reference" is an attribute value that specifies a CellML variable.
 .. _specC_interpretation_of_mathematics:
 
 
-3.8 Interpretation of ``math`` elements
----------------------------------------
+Interpretation of ``math`` elements
+-----------------------------------
 
 1. The following :code:`component` elements SHALL, for the purposes of this specification, be "pertinent component elements":
 
@@ -355,8 +355,8 @@ A "variable reference" is an attribute value that specifies a CellML variable.
 .. _specC_interpretation_of_encapsulation:
 
 
-3.9 Interpretation of ``encapsulation`` elements
-------------------------------------------------
+Interpretation of ``encapsulation`` elements
+--------------------------------------------
 
 1. For the purposes of this specification, there SHALL be a conceptual "encapsulation digraph" in which there is exactly one node for every component in the :ref:`CellML model<specA_cellml_model>`.
 
@@ -387,8 +387,8 @@ A "variable reference" is an attribute value that specifies a CellML variable.
 
 .. _specC_interpretation_of_map_variables:
 
-3.10 Interpretation of ``map_variables`` elements
--------------------------------------------------
+Interpretation of ``map_variables`` elements
+--------------------------------------------
 
 1.  For the purposes of this specification, the conceptual "variable equivalence network" SHALL be an undirected graph with one node for every :code:`variable` element in the :ref:`CellML model<specA_cellml_model>`.
     
@@ -465,8 +465,8 @@ A "variable reference" is an attribute value that specifies a CellML variable.
 .. marker_interpretation_of_map_variables_end
 .. marker_interpretation_of_resets_start
 
-3.11 Interpretation of ``reset`` elements
------------------------------------------
+Interpretation of ``reset`` elements
+------------------------------------
 
 1. For the purposes of this section, we define the "reset variable" to be the variable referenced by a :code:`reset` element's :code:`variable` attribute, and the "test variable" to be the variable referenced by its :code:`test_variable` attribute.
 

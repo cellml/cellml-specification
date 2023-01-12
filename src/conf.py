@@ -64,6 +64,7 @@ def define_excluded_patterns():
     if build_type == 'Normative':
         exclude_patterns = ['master_index.rst',
                             'reference/index_section*',
+                            'reference/examples/*/*.rst',
                             'reference/formal_and_informative/*.rst',
                             'reference/informative/*.rst',
                             'reference/libcellml/*.rst', ]

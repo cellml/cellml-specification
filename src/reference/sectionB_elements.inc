@@ -4,8 +4,8 @@
 
 .. _model:
 
-2.1 The ``model`` element
--------------------------
+The ``model`` element
+---------------------
 
 The top-level element information item in a :ref:`CellML infoset<specA_cellml_infoset>` MUST be an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`model`.
 In this specification, the top-level element is referred to as the :code:`model` element.
@@ -45,8 +45,8 @@ In this specification, the top-level element is referred to as the :code:`model`
 
 .. _import:
 
-2.2 The ``import`` element
---------------------------
+The ``import`` element
+----------------------
 
 An :code:`import` element information item (referred to in this specification as an :code:`import` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`import`, which appears as a child of a :code:`model` element.
 
@@ -83,8 +83,8 @@ An :code:`import` element information item (referred to in this specification as
 
 .. _import_units:
 
-2.3 The ``import units`` element
---------------------------------
+The ``import units`` element
+----------------------------
 
 An :code:`import units` element information item (referred to in this specification as an :code:`import units` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`units`, which appears as a child of an :code:`import` element.
 
@@ -111,8 +111,8 @@ An :code:`import units` element information item (referred to in this specificat
 
 .. _import_component:
 
-2.4 The ``import component`` element
-------------------------------------
+The ``import component`` element
+--------------------------------
 
 An :code:`import component` element information item (referred to in this specification as an :code:`import component` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`component`, which appears as a child of an :code:`import` element.
 
@@ -137,8 +137,8 @@ An :code:`import component` element information item (referred to in this specif
 
 .. _units:
 
-2.5 The ``units`` element
--------------------------
+The ``units`` element
+---------------------
 
 A :code:`units` element information item (referred to in this specification as a :code:`units` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`units`, which appears as a child of a :code:`model` element.
 
@@ -164,8 +164,8 @@ A :code:`units` element information item (referred to in this specification as a
 
 .. _unit:
 
-2.6 The ``unit`` element
-------------------------
+The ``unit`` element
+--------------------
 
 A :code:`unit` element information item (referred to in this specification as a :code:`unit` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`unit`, which appears as a child of a :code:`units` element.
 
@@ -216,8 +216,8 @@ A :code:`unit` element information item (referred to in this specification as a 
 
 .. _component:
 
-2.7 The ``component`` element
------------------------------
+The ``component`` element
+-------------------------
 
 A :code:`component` element information item (referred to in this specification as a :code:`component` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`component`, which appears as a child of a :code:`model` element.
 
@@ -250,8 +250,8 @@ A :code:`component` element information item (referred to in this specification 
 
 .. _variable:
 
-2.8 The ``variable`` element
-----------------------------
+The ``variable`` element
+------------------------
 
 A :code:`variable` element information item (referred to in this specification as a :code:`variable` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`variable`, which appears as a child of a :code:`component` element.
 
@@ -290,8 +290,8 @@ A :code:`variable` element information item (referred to in this specification a
 
 .. _reset:
 
-2.9 The ``reset`` element
--------------------------
+The ``reset`` element
+---------------------
 
 A :code:`reset` element information item (referred to in this specification as a :code:`reset` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`reset`, which appears as a child of a :code:`component` element.
 
@@ -346,8 +346,8 @@ A :code:`reset` element information item (referred to in this specification as a
 
 .. _test_value:
 
-2.10 The ``test_value`` element
--------------------------------
+The ``test_value`` element
+--------------------------
 
 A :code:`test_value` element information item (referred to in this specification as a :code:`test_value` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`test_value`, which appears as a child of a :code:`reset` element.
 
@@ -360,8 +360,8 @@ A :code:`test_value` element information item (referred to in this specification
 
 .. _reset_value:
 
-2.11 The ``reset_value`` element
---------------------------------
+The ``reset_value`` element
+---------------------------
 
 A :code:`reset_value` element information item (referred to in this specification as a :code:`reset_value` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`reset_value`, which appears as a child of a :code:`reset` element.
 
@@ -374,8 +374,8 @@ A :code:`reset_value` element information item (referred to in this specificatio
 
 .. _math:
 
-2.12 The ``math`` element
--------------------------
+The ``math`` element
+--------------------
 
 A :code:`math` element information item (referred to in this specification as a :code:`math` element) is an element in the MathML namespace, which appears as a child of a :code:`component` element, a :code:`test_value` element, or a :code:`reset_value` element.
 
@@ -458,8 +458,8 @@ A :code:`math` element information item (referred to in this specification as a 
 
 .. _encapsulation:
 
-2.13 The ``encapsulation`` element
-----------------------------------
+The ``encapsulation`` element
+-----------------------------
 
 An :code:`encapsulation` element information item (referred to in this specification as an :code:`encapsulation` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`encapsulation`, which appears as a child of a :code:`model` element.
 
@@ -472,8 +472,8 @@ An :code:`encapsulation` element information item (referred to in this specifica
 
 .. _component_ref:
 
-2.14 The ``component_ref`` element
-----------------------------------
+The ``component_ref`` element
+-----------------------------
 
 A :code:`component_ref` element information item (referred to in this specification as a :code:`component_ref` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`component_ref`, which appears as a child of an :code:`encapsulation` element.
 
@@ -494,8 +494,8 @@ A :code:`component_ref` element information item (referred to in this specificat
 
 .. _connection:
 
-2.15 The ``connection`` element
--------------------------------
+The ``connection`` element
+--------------------------
 
 A :code:`connection` element information item (referred to in this specification as a :code:`connection` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`connection`, which appears as a child of a :code:`model` element.
 
@@ -536,8 +536,8 @@ A :code:`connection` element information item (referred to in this specification
 
 .. _map_variables:
 
-2.16 The ``map_variables`` element
-----------------------------------
+The ``map_variables`` element
+-----------------------------
 
 A :code:`map_variables` element information item (referred to in this specification as a :code:`map_variables` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`map_variables`, which appears as a child of a :code:`connection` element.
 
