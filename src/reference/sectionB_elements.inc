@@ -387,7 +387,7 @@ A :code:`math` element information item (referred to in this specification as a 
 
 .. container:: issue-2-12-2
 
-   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :numref:`Table {number}: {name}<table_supported_mathml_elements>`.
+   2. Each element child of a :code:`math` element MUST have an element-type name that is listed in :numref:`Table {number}: Supported MathML elements<table_supported_mathml_elements>`.
 
 .. marker_math_2
 
@@ -415,6 +415,7 @@ A :code:`math` element information item (referred to in this specification as a 
 .. marker_math_4
 
 .. _table_supported_mathml_elements:
+
 .. table:: Supported MathML elements
   :widths: auto
 
@@ -454,6 +455,7 @@ A :code:`math` element information item (referred to in this specification as a 
   +----------------------------------+------------------------------------------------------------------+
 
 .. marker_math_end
+
 .. marker_encapsulation_start
 
 .. _encapsulation:

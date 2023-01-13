@@ -24,7 +24,7 @@ target_cellml_org = True
 # The short X.Y version.
 version = '2.0'
 # The full version, including alpha/beta/rc tags.
-release = '2.0.1.rc1'
+release = '2.0.1.rc2'
 
 if unofficial:
   tags.add('unofficial')

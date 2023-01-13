@@ -148,7 +148,7 @@ Interpretation of ``units`` elements
     
       1. If the :code:`unit` element does not have a :code:`prefix` attribute, then the prefix term SHALL have value 0.
       2. If the :code:`prefix` attribute has a value which is an :ref:`integer string<specA_integer>`, then the value of the prefix term SHALL be the numerical value of that string.
-      3. If the :code:`prefix` attribute has a value which is not an :ref:`integer string<specA_integer>`, then the attribute MUST have a value taken from the "Name" column of :numref:`Table {number}: {name}<table_prefix_values>`, and the prefix term SHALL have the value taken from the "Value" column of the same row.
+      3. If the :code:`prefix` attribute has a value which is not an :ref:`integer string<specA_integer>`, then the attribute MUST have a value taken from the "Name" column of :numref:`Table {number}: Prefix values<table_prefix_values>`, and the prefix term SHALL have the value taken from the "Value" column of the same row.
 
    2. The exponent term is a conceptual property of :code:`unit` elements.
       
@@ -248,6 +248,7 @@ Interpretation of ``units`` elements
   :code:`zepto`    −21
   :code:`yocto`    −24
   ============== ==========
+
 
 .. marker_interpretation_of_units_end
 .. marker_component_reference_start
