@@ -409,9 +409,6 @@ A :code:`math` element information item (referred to in this specification as a 
 
       1. A :code:`cn` element MUST be one of the following :mathml2help:`types<#contm.typeattrib>`\: real or e-notation.
 
-
-   6. A MathML :code:`degree` element MUST be a child of a MathML :code:`root` element or a MathML :code:`diff` element.
-
 .. marker_math_4
 
 .. _table_supported_mathml_elements:
