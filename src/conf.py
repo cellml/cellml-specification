@@ -69,6 +69,8 @@ def define_excluded_patterns():
     if build_type == 'Normative':
         exclude_patterns = ['master_index.rst',
                             'reference/index_section*',
+                            'reference/sectionB_elements.inc',
+                            'reference/sectionC_interpretation.inc',
                             'reference/examples/*/*.rst',
                             'reference/formal_and_informative/*.rst',
                             'reference/informative/*.rst',
