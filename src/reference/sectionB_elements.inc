@@ -474,7 +474,7 @@ An :code:`encapsulation` element information item (referred to in this specifica
 The ``component_ref`` element
 -----------------------------
 
-A :code:`component_ref` element information item (referred to in this specification as a :code:`component_ref` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`component_ref`, which appears as a child of an :code:`encapsulation` element.
+A :code:`component_ref` element information item (referred to in this specification as a :code:`component_ref` element) is an element in the :ref:`CellML namespace<specA_cellml_namespace>` with a local name equal to :code:`component_ref`, which appears as a descendant of an :code:`encapsulation` element.
 
 .. container:: issue-2-14-1
 
