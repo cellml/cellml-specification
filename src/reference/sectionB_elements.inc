@@ -96,6 +96,8 @@ An :code:`import units` element information item (referred to in this specificat
 
       2. The value of the :code:`name` attribute MUST NOT be identical to the value of the :code:`name` attribute of any other :code:`units` or :code:`import units` element in the :ref:`CellML infoset<specA_cellml_infoset>`.
 
+      3. The value of the :code:`name` attribute MUST NOT be identical to the name of any of the units listed in :numref:`Table {number}: {name}<table_built_in_units>` (see :numref:`{number} {name}<specC_units_reference>`).
+
 .. marker_import_units_1
 
 .. container:: issue-2-3-2
